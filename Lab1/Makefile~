@@ -1,0 +1,2 @@
+all:
+	g++ -g -o lab1 Robot.cpp lab1.cpp

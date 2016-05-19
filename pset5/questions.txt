@@ -1,0 +1,12 @@
+0.  Pneumono­ultra­microscopic­silico­volcano­coniosis is a lung disease known as silicosis
+1.  getrusage() returns resource usage measures for calling process (the sume of resources used by all threads in the process), for all children of the calling process that have termincated and been waited for
+    , and for the calling thread.
+2.  the type struct rusuage has 16 members.
+3.  because if we pass before and afer by value, because the already written calculate function have pointers as parameters.
+4.  TODO
+5.  TODO
+6.  We don't want the check and load to change any contents of the data.  
+7.  TODO
+8.  TODO
+9.  TODO
+10. TODO

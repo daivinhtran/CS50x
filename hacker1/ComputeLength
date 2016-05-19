@@ -1,0 +1,14 @@
+int ComputeLength(signed long long input)
+{    
+    // The function computes the number of digit that input has
+    int len = 0;
+    do
+    {
+        input = input/10;
+        len++;
+    } 
+    while(input != 0);
+     
+    return len;
+}
+

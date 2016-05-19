@@ -1,0 +1,19 @@
+0.  TODO
+1.  GIF
+2.  TODO
+3.  TODO
+4.  TODO
+5.  TODO
+6.  stdint.h declares sets of integer types having specified widths.
+7.  The point of using uint8_t, uint32_t, int32_t, uint16_t is to statically define the size of certain types (BYTE, DWORD, LONG, WORD)
+8.  BYTE is 1 byte, DWORD is 4 bytes, LONG is 4 bytes, WORD is 2 bytes
+9.  The first two bytes of any BMP file must be BM
+10.	bfSize of the size of the bmp file in bytes. biSize is the size (in bytes) required by the structure 
+11. if biHeight is negative, the bitmap is a top-down DIB and its origin is the upper-left corner
+12. biBitCount in BITMAPINFOHEADER specifies the BMP's color depth (i.e., bits per pixel)
+13. fopen might return NULL if there isn't enough
+14. The third argument to fread is always 1 because we only want fread to read the elements of data one time.
+15. 3
+16. fseek changes the position of the i/o stream.
+17. SEEK_CUR is the current position of the i/o stream.
+18. Rob Bowden

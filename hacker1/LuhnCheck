@@ -1,0 +1,48 @@
+
+bool LuhnCheck(unsigned long long input)
+{
+    //The function is used to check whether the 16 digit number is inheritted by Luhn's algorithm
+    unsigned int len = ComputeLength(input);
+    unsigned int digit_array[len];
+    
+    //printf("%llu\n", input);
+    for(int i = 0; i< len; i++)
+    {
+        //the for loop stores each digit of the number into an 16-element array from right to left
+        digit_array[i] = input%10;
+        //printf("%d\n", digit_array[i]);
+        input/=10;
+    }
+    int sum = 0;
+    for (int i = 1; i<len; i = i+ 2)
+    {
+        digit_array[i]  = digit_array[i]*2;
+        if (ComputeLength(digit_array[i]) == 2)
+        {
+            int temp[2];
+            for(int ii=0; ii<2; ii++)
+            {
+            temp[ii] = digit_array[i]%10;
+            digit_array[i]/=10;
+            }
+            digit_array[i] = temp[0] + temp[1];
+        }
+        sum+=digit_array[i]; // "let's add those products' digits
+    }
+    for (int i = 0; i<len; i = i + 2)
+    {
+        sum+= digit_array[i];
+    }
+   
+    int sumlastdigit = sum%10;
+ 
+    if (sumlastdigit ==0)
+    {
+       return true;
+    }
+    else
+    {
+       return false;
+    }   
+}
+
